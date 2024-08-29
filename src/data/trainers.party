@@ -8197,45 +8197,70 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Purple
 
-Dewgong
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Ice Beam
-- Surf
-- Hail
-- Safeguard
+Ninetales-Alola (F) @ Icy Rock  
+Ability: Snow Warning  
+Level: 70  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Blizzard  
+- Moonblast  
+- Aurora Veil  
+- Dark Pulse  
 
-Cloyster
-Level: 51
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Spikes
-- Protect
-- Hail
-- Dive
+Cloyster @ Life Orb  
+Ability: Skill Link  
+Level: 70  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Spikes  
+- Shell Smash  
+- Icicle Spear  
+- Rock Blast  
 
-Slowbro
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Ice Beam
-- Surf
-- Amnesia
-- Yawn
+Mr. Rime @ Heavy-Duty Boots  
+Ability: Ice Body  
+Level: 70  
+EVs: 248 HP / 252 SpA / 8 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Psychic  
+- Ice Beam  
+- Dazzling Gleam  
+- Light Screen  
 
-Jynx
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Ice Punch
-- Double Slap
-- Lovely Kiss
-- Attract
+Glaceon @ Choice Specs  
+Ability: Snow Cloak  
+Level: 70  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Ice Beam  
+- Alluring Voice  
+- Shadow Ball  
+- Blizzard  
 
-Lapras @ Sitrus Berry
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Confuse Ray
-- Ice Beam
-- Surf
-- Body Slam
+Lapras @ Leftovers  
+Ability: Water Absorb  
+Level: 70  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Surf  
+- Ice Beam  
+- Confuse Ray  
+- Perish Song  
+
+Slowbro @ Slowbronite  
+Ability: Regenerator  
+Level: 70  
+EVs: 252 HP / 252 Def / 4 SpA  
+Bold Nature  
+IVs: 0 Atk  
+- Psychic  
+- Slack Off  
+- Calm Mind  
+- Flamethrower  
 
 === TRAINER_ELITE_FOUR_BRUNO ===
 Name: BRUNO
@@ -8248,45 +8273,61 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Green
 
-Onix
-Level: 51
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Earthquake
-- Rock Tomb
-- Iron Tail
-- Roar
+Hitmonchan @ Punching Glove  
+Ability: Iron Fist  
+Level: 70  
+EVs: 248 HP / 252 Atk / 8 SpD  
+Adamant Nature  
+- Thunder Punch  
+- Ice Punch  
+- Drain Punch  
+- Fire Punch  
 
-Hitmonchan
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Sky Uppercut
-- Mach Punch
-- Rock Tomb
-- Counter
+Annihilape @ Choice Scarf  
+Ability: Inner Focus  
+Level: 70  
+- Earthquake  
+- Stone Edge  
+- Close Combat  
+- Shadow Claw  
 
-Hitmonlee
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Mega Kick
-- Foresight
-- Brick Break
-- Facade
+Sirfetch’d @ Expert Belt  
+Ability: Scrappy  
+Level: 70  
+EVs: 248 HP / 252 Atk / 8 SpD  
+Adamant Nature  
+- Leaf Blade  
+- Close Combat  
+- Brave Bird  
+- Knock Off  
 
-Onix
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Edge
-- Earthquake
-- Iron Tail
-- Sand Tomb
+Steelix @ Steelixite  
+Ability: Sheer Force  
+Level: 70  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Earthquake  
+- Body Press  
+- Heavy Slam  
+- Iron Defense  
 
-Machamp @ Sitrus Berry
-Level: 56
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Cross Chop
-- Bulk Up
-- Scary Face
-- Rock Tomb
+Machamp (M) @ Flame Orb  
+Ability: Guts  
+Level: 70  
+- Facade  
+- Close Combat  
+- Protect  
+- Stone Edge  
+
+Zapdos-Galar @ Choice Band  
+Ability: Defiant  
+Level: 70  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Thunderous Kick  
+- Brave Bird  
+- U-turn  
+- Close Combat  
 
 === TRAINER_ELITE_FOUR_AGATHA ===
 Name: AGATHA
@@ -8299,45 +8340,66 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Pink
 
-Gengar
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Punch
-- Confuse Ray
-- Toxic
-- Double Team
+Crobat @ Focus Sash  
+Ability: Infiltrator  
+Level: 70  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+- U-turn  
+- Brave Bird  
+- Toxic  
+- Tailwind  
 
-Golbat
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Confuse Ray
-- Poison Fang
-- Air Cutter
-- Bite
+Marowak-Alola @ Thick Club  
+Ability: Rock Head  
+Level: 70  
+EVs: 248 HP / 252 Atk / 8 SpD  
+Adamant Nature  
+- Will-O-Wisp  
+- Shadow Bone  
+- Flare Blitz  
+- Double-Edge  
 
-Haunter
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hypnosis
-- Dream Eater
-- Curse
-- Mean Look
+Weezing-Galar @ Rocky Helmet  
+Ability: Levitate  
+Level: 70  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Sludge Wave  
+- Flamethrower  
+- Pain Split  
 
-Arbok
-Level: 56
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Sludge Bomb
-- Screech
-- Iron Tail
-- Bite
+Muk-Alola @ Leftovers  
+Ability: Poison Touch  
+Level: 70  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Crunch  
+- Explosion  
+- Acid Armor  
+- Gunk Shot  
 
-Gengar @ Sitrus Berry
-Level: 58
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Sludge Bomb
-- Hypnosis
-- Nightmare
+Gengar @ Gengarite  
+Ability: Cursed Body  
+Level: 70  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Shadow Ball  
+- Sludge Wave  
+- Focus Blast  
+- Thunderbolt  
+
+Moltres-Galar @ Sitrus Berry  
+Ability: Berserk  
+Level: 70  
+IVs: 0 Atk  
+- Fiery Wrath  
+- Hurricane  
+- Substitute  
+- Nasty Plot  
 
 === TRAINER_ELITE_FOUR_LANCE ===
 Name: LANCE
@@ -8350,45 +8412,65 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Blue
 
-Gyarados
-Level: 56
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Dragon Rage
-- Twister
-- Bite
+Aerodactyl @ Focus Sash  
+Ability: Rock Head  
+Level: 70  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Stone Edge  
+- Iron Head  
+- Tailwind  
+- Earthquake  
 
-Dragonair
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Safeguard
-- Dragon Rage
-- Outrage
+Kingdra @ White Herb  
+Ability: Sniper  
+Level: 70  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Draco Meteor  
+- Ice Beam  
+- Surf  
+- Yawn  
 
-Dragonair
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Safeguard
-- Thunder Wave
-- Outrage
+Exeggutor-Alola @ Yache Berry  
+Ability: Harvest  
+Level: 70  
+IVs: 0 Atk  
+- Dragon Pulse  
+- Energy Ball  
+- Flamethrower  
+- Sleep Powder  
 
-Aerodactyl
-Level: 58
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Ancient Power
-- Wing Attack
-- Scary Face
+Gyarados @ Wacan Berry  
+Ability: Intimidate  
+Level: 70  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Waterfall  
+- Earthquake  
+- Crunch  
+- Dragon Dance  
 
-Dragonite @ Sitrus Berry
-Level: 60
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Safeguard
-- Outrage
-- Wing Attack
+Charizard @ Charizardite X  
+Ability: Blaze  
+Level: 70  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Outrage  
+- Flare Blitz  
+- Dragon Dance  
+- Crunch  
+
+Dragonite @ Heavy-Duty Boots  
+Ability: Multiscale  
+Level: 70  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Roost  
+- Dragon Dance  
+- Earthquake  
+- Dual Wingbeat  
 
 === TRAINER_LEADER_BROCK ===
 Name: BROCK
@@ -9140,53 +9222,66 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
 
-Pidgeot
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
+Rhyperior @ Assault Vest  
+Ability: Solid Rock  
+Level: 70  
+EVs: 248 HP / 248 Atk / 8 SpD / 4 Spe  
+Adamant Nature  
+- Stone Edge  
+- Earthquake  
+- Avalanche  
+- Body Press  
 
-Alakazam
-Level: 57
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Future Sight
-- Recover
-- Reflect
+Alakazam @ Focus Sash  
+Ability: Magic Guard  
+Level: 70  
+EVs: 4 Atk / 252 SpA / 252 Spe  
+Hasty Nature  
+- Psychic  
+- Grass Knot  
+- Focus Punch  
+- Calm Mind  
 
-Rhydon
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
+Electivire @ Expert Belt  
+Ability: Motor Drive  
+Level: 70  
+EVs: 252 Atk / 8 SpD / 248 Spe  
+Adamant Nature  
+- Supercell Slam  
+- Darkest Lariat  
+- Earthquake  
+- Ice Punch  
 
-Arcanine
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Extreme Speed
-- Flamethrower
-- Roar
-- Bite
+Exeggutor @ Sitrus Berry  
+Ability: Harvest  
+Level: 70  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Psychic  
+- Energy Ball  
+- Light Screen  
+- Leaf Storm  
 
-Exeggutor
-Level: 61
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Egg Bomb
-- Sleep Powder
-- Light Screen
+Flareon @ Toxic Orb  
+Ability: Guts  
+Level: 70  
+EVs: 244 HP / 248 Atk / 16 SpD  
+Adamant Nature  
+- Flare Blitz  
+- Protect  
+- Facade  
+- Superpower  
 
-Blastoise @ Sitrus Berry
-Level: 63
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
-- Rain Dance
-- Skull Bash
-- Bite
+Blastoise @ Blastoisinite  
+Ability: Rain Dish  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Aura Sphere  
+- Dark Pulse  
+- Water Pulse  
+- Ice Beam  
 
 === TRAINER_CHAMPION_FIRST_BULBASAUR ===
 Name: TERRY
@@ -9199,53 +9294,62 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
 
-Pidgeot
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
+Rhyperior @ Assault Vest  
+Ability: Solid Rock  
+Level: 70  
+EVs: 248 HP / 248 Atk / 8 SpD / 4 Spe  
+Adamant Nature  
+- Stone Edge  
+- Earthquake  
+- Avalanche  
+- Body Press  
 
-Alakazam
-Level: 57
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Future Sight
-- Recover
-- Reflect
+Alakazam @ Focus Sash  
+Ability: Magic Guard  
+EVs: 4 Atk / 252 SpA / 252 Spe  
+Hasty Nature  
+- Psychic  
+- Grass Knot  
+- Focus Punch  
+- Calm Mind  
 
-Rhydon
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
+Electivire @ Expert Belt  
+Ability: Motor Drive  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Supercell Slam  
+- Darkest Lariat  
+- Earthquake  
+- Ice Punch  
 
-Gyarados
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
-- Dragon Rage
-- Bite
-- Thrash
+Arcanine @ Life Orb  
+Ability: Flash Fire  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Flare Blitz  
+- Wild Charge  
+- Extreme Speed  
+- Close Combat  
 
-Arcanine
-Level: 61
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Extreme Speed
-- Flamethrower
-- Roar
-- Bite
+Vaporeon @ Leftovers  
+Ability: Water Absorb  
+EVs: 248 HP / 252 Def / 8 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Scald  
+- Wish  
+- Protect  
+- Toxic  
 
-Venusaur @ Sitrus Berry
-Level: 63
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Solar Beam
-- Synthesis
-- Sunny Day
-- Growth
+Venusaur @ Venusaurite  
+Ability: Chlorophyll  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Giga Drain  
+- Sludge Bomb  
+- Synthesis  
+- Earth Power  
 
 === TRAINER_CHAMPION_FIRST_CHARMANDER ===
 Name: TERRY
@@ -9258,53 +9362,58 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
 
-Pidgeot
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
+Rhyperior @ Assault Vest  
+Ability: Solid Rock  
+Level: 70  
+EVs: 248 HP / 248 Atk / 8 SpD / 4 Spe  
+Adamant Nature  
+- Stone Edge  
+- Earthquake  
+- Avalanche  
+- Body Press  
 
-Alakazam
-Level: 57
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Future Sight
-- Recover
-- Reflect
+Alakazam @ Focus Sash  
+Ability: Magic Guard  
+EVs: 4 Atk / 252 SpA / 252 Spe  
+Hasty Nature  
+- Psychic  
+- Grass Knot  
+- Focus Punch  
+- Calm Mind  
 
-Rhydon
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
+Electivire @ Expert Belt  
+Ability: Motor Drive  
+- Supercell Slam  
+- Darkest Lariat  
+- Earthquake  
+- Ice Punch  
 
-Exeggutor
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Egg Bomb
-- Sleep Powder
-- Light Screen
+Starmie @ Choice Specs  
+Ability: Analytic  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Surf  
+- Thunderbolt  
+- Psychic  
+- Ice Beam  
 
-Gyarados
-Level: 61
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
-- Dragon Rage
-- Bite
-- Thrash
+Leafeon @ Life Orb  
+Ability: Chlorophyll  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Leaf Blade  
+- Knock Off  
+- Roar  
+- Swords Dance  
 
-Charizard @ Sitrus Berry
-Level: 63
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Fire Blast
-- Aerial Ace
-- Slash
-- Fire Spin
+Charizard @ Charizardite Y  
+Ability: Solar Power  
+IVs: 0 Atk  
+- Flamethrower  
+- Solar Beam  
+- Roost  
+- Weather Ball  
 
 === TRAINER_CHANNELER_PATRICIA ===
 Name: PATRICIA
