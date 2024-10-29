@@ -50,6 +50,7 @@ enum StartMenuOption
     STARTMENU_RETIRE,
     STARTMENU_PLAYER2,
     STARTMENU_DEBUG,
+    MENU_ACTION_DEXNAV,
     MAX_STARTMENU_ITEMS
 };
 
@@ -89,6 +90,7 @@ static bool8 StartMenuPlayerCallback(void);
 static bool8 StartMenuSaveCallback(void);
 static bool8 StartMenuOptionCallback(void);
 static bool8 StartMenuExitCallback(void);
+static bool8 StartMenuDexNavCallback(void);
 static bool8 StartMenuSafariZoneRetireCallback(void);
 static bool8 StartMenuLinkPlayerCallback(void);
 static bool8 StartMenuDebugCallback(void);
@@ -130,6 +132,7 @@ static const struct MenuAction sStartMenuActionTable[] = {
     [STARTMENU_RETIRE]  = {gText_MenuRetire,  {.u8_void = StartMenuSafariZoneRetireCallback}},
     [STARTMENU_PLAYER2] = {gText_MenuPlayer,  {.u8_void = StartMenuLinkPlayerCallback}},
     [STARTMENU_DEBUG]   = {sText_MenuDebug,   {.u8_void = StartMenuDebugCallback}},
+    [MENU_ACTION_DEXNAV] = {gText_MenuDexNav,  {.u8_void = StartMenuDexNavCallback}},
 };
 
 static const struct WindowTemplate sTimeWindowTemplate = {
@@ -238,6 +241,8 @@ static void SetUpStartMenu_Debug(void)
     AppendToStartMenuItems(STARTMENU_DEBUG);
     if (FlagGet(FLAG_SYS_POKEDEX_GET) == TRUE)
         AppendToStartMenuItems(STARTMENU_POKEDEX);
+    if (FlagGet(FLAG_SYS_DEXNAV_GET) == TRUE)
+        AppendToStartMenuItems(MENU_ACTION_DEXNAV);
     if (FlagGet(FLAG_SYS_POKEMON_GET) == TRUE)
         AppendToStartMenuItems(STARTMENU_POKEMON);
     AppendToStartMenuItems(STARTMENU_BAG);
@@ -251,6 +256,8 @@ static void SetUpStartMenu_NormalField(void)
 {
     if (FlagGet(FLAG_SYS_POKEDEX_GET) == TRUE)
         AppendToStartMenuItems(STARTMENU_POKEDEX);
+    if (FlagGet(FLAG_SYS_DEXNAV_GET) == TRUE)
+        AppendToStartMenuItems(MENU_ACTION_DEXNAV);
     if (FlagGet(FLAG_SYS_POKEMON_GET) == TRUE)
         AppendToStartMenuItems(STARTMENU_POKEMON);
     AppendToStartMenuItems(STARTMENU_BAG);
@@ -512,6 +519,9 @@ static bool8 StartCB_HandleInput(void)
             return FALSE;
         sStartMenuCallback = sStartMenuActionTable[sStartMenuOrder[sStartMenuCursorPos]].func.u8_void;
         StartMenu_FadeScreenIfLeavingOverworld();
+        if (sCurrentStartMenuActions[sStartMenuCursorPos] == MENU_ACTION_DEXNAV
+          && MapHasNoEncounterData())
+            return FALSE;
         return FALSE;
     }
     if (JOY_NEW(B_BUTTON | START_BUTTON))

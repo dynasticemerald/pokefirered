@@ -2391,7 +2391,8 @@ static void BufferIVString(u8 stat)
 
     if (isHyperTrained)
         StringCopy(dst, sText_JudgeHyperTrained);
-    else if (statValue == 31)
+
+    /*if (statValue == 31)
         StringCopy(dst, sText_JudgeBest);
     else if (statValue == 30)
         StringCopy(dst, sText_JudgeFantastic);
@@ -2402,9 +2403,11 @@ static void BufferIVString(u8 stat)
     else if (statValue > 0)
         StringCopy(dst, sText_JudgeDecent);
     else
-        StringCopy(dst, sText_JudgeNoGood);
+        StringCopy(dst, sText_JudgeNoGood);*/
 
-    SetStatXPos(stat, 0);
+    ConvertIntToDecimalStringN(dst, statValue, STR_CONV_MODE_LEFT_ALIGN, 3);
+
+    SetStatXPos(stat, GetNumberRightAlign63(dst));
     if (stat != STAT_HP)
         ApplyNatureColor(dst, stat);
 }
@@ -2751,9 +2754,9 @@ static void PrintSkillsPage(void)
     switch (sMonSummaryScreen->skillsPageMode)
     {
         case PSS_SKILL_PAGE_IVS:
-            x = 10;
-            yDiff = 1;
-            statFontId = FONT_SMALL;
+            x = 13;
+            yDiff = 0;
+            statFontId = FONT_NORMAL;
             break;
         default:
             x = 13;

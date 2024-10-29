@@ -58,5 +58,11 @@ void ResetEncounterRateModifiers(void);
 bool8 TryStandardWildEncounter(u32 currMetatileAttrs);
 bool8 TryDoDoubleWildBattle(void);
 u32 CalculateChainFishingShinyRolls(void);
+void CreateWildMon(u16 species, u8 level);
+u16 GetCurrentMapWildMonHeaderId(void);
+u8 ChooseWildMonIndex_Land(void);
+u8 ChooseWildMonIndex_WaterRock(void);
+u8 ChooseHiddenMonIndex(void);
+bool32 MapHasNoEncounterData(void);
 
 #endif // GUARD_WILD_ENCOUNTER_H

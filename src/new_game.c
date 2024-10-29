@@ -156,6 +156,11 @@ void NewGameInitData(void)
     RunScriptImmediately(EventScript_ResetAllMapFlags);
     StringCopy(gSaveBlock1Ptr->rivalName, rivalName);
     ResetTrainerTowerResults();
+
+#if USE_DEXNAV_SEARCH_LEVELS == TRUE
+    memset(gSaveBlock3Ptr->dexNavSearchLevels, 0, sizeof(gSaveBlock3Ptr->dexNavSearchLevels));
+#endif
+    gSaveBlock3Ptr->dexNavChain = 0;
 }
 
 static void ResetMiniGamesResults(void)

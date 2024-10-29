@@ -91,7 +91,7 @@ void DisableWildEncounters(bool8 state)
     sWildEncountersDisabled = state;
 }
 
-static u8 ChooseWildMonIndex_Land(void)
+u8 ChooseWildMonIndex_Land(void)
 {
     u8 wildMonIndex = 0;
     bool8 swap = FALSE;
@@ -131,7 +131,7 @@ static u8 ChooseWildMonIndex_Land(void)
     return wildMonIndex;
 }
 
-static u8 ChooseWildMonIndex_WaterRock(void)
+u8 ChooseWildMonIndex_WaterRock(void)
 {
     u8 wildMonIndex = 0;
     bool8 swap = FALSE;
@@ -157,7 +157,7 @@ static u8 ChooseWildMonIndex_WaterRock(void)
     return wildMonIndex;
 }
 
-static u8 ChooseWildMonIndex_Fishing(u8 rod)
+u8 ChooseWildMonIndex_Fishing(u8 rod)
 {
     u8 wildMonIndex = 0;
     bool8 swap = FALSE;
@@ -206,6 +206,27 @@ static u8 ChooseWildMonIndex_Fishing(u8 rod)
         break;
     }
     return wildMonIndex;
+}
+
+u8 ChooseHiddenMonIndex(void)
+{
+    #ifdef ENCOUNTER_CHANCE_HIDDEN_MONS_TOTAL
+        u8 rand = Random() % ENCOUNTER_CHANCE_HIDDEN_MONS_TOTAL;
+
+        if (rand < ENCOUNTER_CHANCE_HIDDEN_MONS_SLOT_0)
+            return 0;
+        else if (rand >= ENCOUNTER_CHANCE_HIDDEN_MONS_SLOT_0 && rand < ENCOUNTER_CHANCE_HIDDEN_MONS_SLOT_1)
+            return 1;
+        else
+            return 2;
+    #else
+        return 0xFF;
+    #endif
+}
+
+bool32 MapHasNoEncounterData(void)
+{
+    return (GetCurrentMapWildMonHeaderId() == HEADER_NONE);
 }
 
 static u8 ChooseWildMonLevel(const struct WildPokemon *wildPokemon, u8 wildMonIndex, u8 area)
@@ -322,7 +343,7 @@ u8 PickWildMonNature(void)
     return Random() % NUM_NATURES;
 }
 
-static void CreateWildMon(u16 species, u8 level, u8 slot)
+void CreateWildMon(u16 species, u8 level, u8 slot)
 {
     u32 personality;
     s8 chamber;

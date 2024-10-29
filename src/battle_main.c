@@ -39,6 +39,7 @@
 #include "test_runner.h"
 #include "trig.h"
 #include "vs_seeker.h"
+#include "dexnav.h"
 #include "wild_encounter.h"
 #include "util.h"
 #include "constants/abilities.h"
@@ -5008,6 +5009,12 @@ static void FreeResetData_ReturnToOvOrDoEvolutions(void)
     {
         gIsFishingEncounter = FALSE;
         gIsSurfingEncounter = FALSE;
+        if (gDexnavBattle && (gBattleOutcome == B_OUTCOME_WON || gBattleOutcome == B_OUTCOME_CAUGHT))
+            IncrementDexNavChain();
+        else
+            gSaveBlock3Ptr->dexNavChain = 0;
+        
+        gDexnavBattle = FALSE;
         ResetSpriteData();
         if (!(gBattleTypeFlags & (BATTLE_TYPE_LINK
                                   | BATTLE_TYPE_RECORDED_LINK

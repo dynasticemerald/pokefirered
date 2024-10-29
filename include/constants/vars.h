@@ -297,9 +297,9 @@
 #define VAR_0x40F4                 0x40F4
 #define VAR_0x40F5                 0x40F5
 #define VAR_0x40F6                 0x40F6
-#define VAR_0x40F7                 0x40F7
-#define VAR_0x40F8                 0x40F8
-#define VAR_0x40F9                 0x40F9
+#define VAR_DEXNAV_SPECIES         0x40F7 // Registered dexnav species
+#define VAR_DEXNAV_STEP_COUNTER    0x40F8 // steps for finding hidden pokemon
+#define VAR_DEXNAV_ENCOUNTER_SCRIPT 0x40F9 // Not included in the Dexnav Branch.
 #define VAR_0x40FA                 0x40FA
 #define VAR_0x40FB                 0x40FB
 #define VAR_0x40FC                 0x40FC

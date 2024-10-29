@@ -14362,7 +14362,7 @@
         {
             {
 #line 5796
-            .species = SPECIES_SQUIRTLE,
+            .species = SPECIES_POPPLIO,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5798
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -14399,7 +14399,7 @@
         {
             {
 #line 5811
-            .species = SPECIES_BULBASAUR,
+            .species = SPECIES_ROWLET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5813
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -14436,7 +14436,7 @@
         {
             {
 #line 5826
-            .species = SPECIES_CHARMANDER,
+            .species = SPECIES_LITTEN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5828
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),

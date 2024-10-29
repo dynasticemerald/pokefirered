@@ -1379,8 +1379,8 @@
 
 #define FLAG_SYS_POKEMON_GET                                        (SYS_FLAGS + 0x28)
 #define FLAG_SYS_POKEDEX_GET                                        (SYS_FLAGS + 0x29)
-#define FLAG_0x82A                                                  (SYS_FLAGS + 0x2A)
-#define FLAG_0x82B                                                  (SYS_FLAGS + 0x2B)
+#define FLAG_SYS_DEXNAV_SEARCH                                      (SYS_FLAGS + 0x2A)
+#define FLAG_SHINY_CREATION                                         (SYS_FLAGS + 0x2B) // force creation of a shiny mon
 #define FLAG_SYS_GAME_CLEAR                                         (SYS_FLAGS + 0x2C)
 #define FLAG_SYS_SET_TRAINER_CARD_PROFILE                           (SYS_FLAGS + 0x2D)
 #define FLAG_0x82E                                                  (SYS_FLAGS + 0x2E)
@@ -1390,8 +1390,8 @@
 #define FLAG_0x832                                                  (SYS_FLAGS + 0x32)
 #define FLAG_0x833                                                  (SYS_FLAGS + 0x33)
 #define FLAG_SYS_NOT_SOMEONES_PC                                    (SYS_FLAGS + 0x34)
-#define FLAG_0x835                                                  (SYS_FLAGS + 0x35)
-#define FLAG_0x836                                                  (SYS_FLAGS + 0x36)
+#define FLAG_SYS_DETECTOR_MODE                                      (SYS_FLAGS + 0x35) // allow player to find hidden mons
+#define FLAG_SYS_DEXNAV_GET                                         (SYS_FLAGS + 0x36) // dexnav shows in start menu
 #define FLAG_SYS_RESET_RTC_ENABLE                                   (SYS_FLAGS + 0x37)
 #define FLAG_0x838                                                  (SYS_FLAGS + 0x38) // Set, never read
 #define FLAG_SYS_MYSTERY_GIFT_ENABLED                               (SYS_FLAGS + 0x39)

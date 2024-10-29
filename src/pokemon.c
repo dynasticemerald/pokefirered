@@ -7,6 +7,7 @@
 #include "text.h"
 #include "data.h"
 #include "battle.h"
+#include "dexnav.h"
 #include "battle_anim.h"
 #include "battle_setup.h"
 #include "item.h"
@@ -1274,6 +1275,10 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
         else if (P_FLAG_FORCE_SHINY != 0 && FlagGet(P_FLAG_FORCE_SHINY))
         {
             isShiny = TRUE;
+        }
+        else if (gDexnavBattle)
+        {
+            isShiny = DexNavTryMakeShinyMon();
         }
         else if (P_NO_SHINIES_WITHOUT_POKEBALLS && !HasAtLeastOnePokeBall())
         {
