@@ -964,7 +964,6 @@ static void Task_SetUpDexNavSearch(u8 taskId)
     
     u16 species = sDexNavSearchDataPtr->species;
     u8 searchLevel = GetSearchLevel(SpeciesToNationalDexNum(species));
-    u8 searchLevel = GetSearchLevel(SpeciesToNationalDexNum(species));
 
     // init sprites
     sDexNavSearchDataPtr->iconSpriteId = MAX_SPRITES;
