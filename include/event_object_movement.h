@@ -220,6 +220,7 @@ u8 ObjectEventGetHeldMovementActionId(struct ObjectEvent *objectEvent);
 u8 GetMoveDirectionAnimNum(u8 direction);
 u8 CopySprite(struct Sprite *sprite, s16 x, s16 y, u8 subpriority);
 void FieldEffectFreeTilesIfUnused(u16 tileStart);
+bool8 IsElevationMismatchAt(u8 elevation, s16 x, s16 y);
 
 // Exported data declarations
 

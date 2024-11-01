@@ -392,6 +392,7 @@ struct PlayerAvatar
     u8 dirTimerHistory[8];
     // For the Rocket mazes
     u16 lastSpinTile;
+    u8 creeping;
 };
 
 struct Camera

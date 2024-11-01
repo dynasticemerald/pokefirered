@@ -1,5 +1,6 @@
 #include "global.h"
 #include "gflib.h"
+#include "dexnav.h"
 #include "debug.h"
 #include "scanline_effect.h"
 #include "overworld.h"
@@ -19,6 +20,7 @@
 #include "strings.h"
 #include "menu_helpers.h"
 #include "text_window.h"
+#include "wild_encounter.h"
 #include "field_fadetransition.h"
 #include "field_player_avatar.h"
 #include "event_object_movement.h"
@@ -119,7 +121,8 @@ static void PrintSaveStats(void);
 static void CloseSaveStatsWindow(void);
 static void HideStartMenuDebug(void);
 
-static const u8 sText_MenuDebug[] = _("DEBUG");
+static const u8 sText_MenuDebug[] = _("Debug");
+static const u8 gText_MenuDexNav[] = _("Dexnav");
 
 static const struct MenuAction sStartMenuActionTable[] = {
     [STARTMENU_POKEDEX] = {gText_MenuPokedex, {.u8_void = StartMenuPokedexCallback}},
@@ -519,7 +522,7 @@ static bool8 StartCB_HandleInput(void)
             return FALSE;
         sStartMenuCallback = sStartMenuActionTable[sStartMenuOrder[sStartMenuCursorPos]].func.u8_void;
         StartMenu_FadeScreenIfLeavingOverworld();
-        if (sCurrentStartMenuActions[sStartMenuCursorPos] == MENU_ACTION_DEXNAV
+        if ((sStartMenuOrder[sStartMenuCursorPos] == MENU_ACTION_DEXNAV)
           && MapHasNoEncounterData())
             return FALSE;
         return FALSE;
@@ -1128,4 +1131,10 @@ void AppendToList(u8 *list, u8 *cursor, u8 newEntry)
 {
     list[*cursor] = newEntry;
     (*cursor)++;
+}
+
+static bool8 StartMenuDexNavCallback(void)
+{
+    CreateTask(Task_OpenDexNavFromStartMenu, 0);
+    return TRUE;
 }

@@ -215,12 +215,12 @@ struct Time
 
 struct SaveBlock3
 {
+    u8 dexNavSearchLevels[ROUND_BITS_TO_BYTES(NUM_SPECIES)];
+    u8 dexNavChain;
 #if OW_USE_FAKE_RTC
     struct Time fakeRTC;
 #endif
-    u8 dexNavSearchLevels[ROUND_BITS_TO_BYTES(NUM_SPECIES)];
-    u8 dexNavChain;
-};
+}; /* max size 1624 bytes */
 
 extern struct SaveBlock3 *gSaveBlock3Ptr;
 

@@ -17431,7 +17431,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = Move_ELECTRO_SHOT,
     },
 
-    [MOVE_TERA_STARSTORM] =
+    [MOVE_STELLAR_STARSTORM] =
     {
         .name = COMPOUND_STRING("Tera Starstorm"),
         .description = COMPOUND_STRING(

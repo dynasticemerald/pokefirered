@@ -541,6 +541,32 @@ bool8 MetatileBehavior_IsSurfableAndNotWaterfall(u8 metatileBehavior)
         return FALSE;
 }
 
+bool8 MetatileBehavior_IsEncounterTile(u8 metatileBehavior)
+{
+    if ((sTileBitAttributes[metatileBehavior] & MB_TALL_GRASS))
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsLandWildEncounter(u8 metatileBehavior)
+{
+    if (MetatileBehavior_IsSurfable(metatileBehavior) == FALSE
+     && MetatileBehavior_IsEncounterTile(metatileBehavior) == TRUE)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsWaterWildEncounter(u8 metatileBehavior)
+{
+    if (MetatileBehavior_IsSurfable(metatileBehavior) == TRUE
+     && MetatileBehavior_IsEncounterTile(metatileBehavior) == TRUE)
+        return TRUE;
+    else
+        return FALSE;
+}
+
 bool8 MetatileBehavior_IsEastBlocked(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_IMPASSABLE_EAST

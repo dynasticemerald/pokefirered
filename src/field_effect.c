@@ -3756,6 +3756,23 @@ static void Task_MoveDeoxysRock_Step(u8 taskId)
     }
 }
 
+// new
+u8 FldEff_CaveDust(void)
+{
+    u8 spriteId;
+    
+    SetSpritePosToOffsetMapCoords((s16 *)&gFieldEffectArguments[0], (s16 *)&gFieldEffectArguments[1], 8, 8);
+    spriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[FLDEFF_CAVE_DUST], gFieldEffectArguments[0], gFieldEffectArguments[1], 0xFF);
+    if (spriteId != MAX_SPRITES)
+    {
+        gSprites[spriteId].coordOffsetEnabled = TRUE;
+        gSprites[spriteId].data[0] = 22;
+    }
+    
+    return spriteId;
+}
+
+
 static void Task_DestroyDeoxysRock(u8 taskId);
 static void DestroyDeoxysRockEffect_CameraShake(s16 *data, u8 taskId);
 static void DestroyDeoxysRockEffect_RockFragments(s16 *data, u8 taskId);

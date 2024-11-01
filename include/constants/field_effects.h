@@ -75,12 +75,14 @@
 #define FLDEFF_TRACKS_SLITHER            70
 #define FLDEFF_TRACKS_SPOT               71
 #define FLDEFF_TRACKS_BUG                72
+#define FLDEFF_CAVE_DUST                 73
 
 #define FLDEFF_PAL_TAG_GENERAL_0          0x1004
 #define FLDEFF_PAL_TAG_GENERAL_1          0x1005
 #define FLDEFF_PAL_TAG_POKEBALL_TRAIL     0x1009
 #define FLDEFF_PAL_TAG_ASH                0x100D
 #define FLDEFF_PAL_TAG_SMALL_SPARKLE      0x100F
+#define FLDEFF_PAL_TAG_CAVE_DUST          0x1010
 
 #define FLDEFFOBJ_SHADOW_S                  0
 #define FLDEFFOBJ_SHADOW_M                  1

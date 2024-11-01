@@ -4,6 +4,7 @@
 #include "global.h"
 
 bool8 MetatileBehavior_IsATile(u8 metatileBehavior);
+bool8 MetatileBehavior_IsEncounterTile(u8);
 bool8 MetatileBehavior_IsJumpEast(u8 metatileBehavior);
 bool8 MetatileBehavior_IsJumpWest(u8 metatileBehavior);
 bool8 MetatileBehavior_IsJumpNorth(u8 metatileBehavior);
@@ -66,6 +67,9 @@ bool8 MetatileBehavior_IsThinIce(u8 metatileBehavior);
 bool8 MetatileBehavior_IsCrackedIce(u8 metatileBehavior);
 bool8 MetatileBehavior_IsDeepWaterTerrain(u8 metatileBehavior);
 bool8 MetatileBehavior_IsSurfableAndNotWaterfall(u8 metatileBehavior);
+bool8 MetatileBehavior_IsEncounterTile(u8 metatileBehavior);
+bool8 MetatileBehavior_IsLandWildEncounter(u8);
+bool8 MetatileBehavior_IsWaterWildEncounter(u8);
 bool8 MetatileBehavior_IsEastBlocked(u8 metatileBehavior);
 bool8 MetatileBehavior_IsWestBlocked(u8 metatileBehavior);
 bool8 MetatileBehavior_IsNorthBlocked(u8 metatileBehavior);

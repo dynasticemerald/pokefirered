@@ -55,6 +55,9 @@ static const struct TextWindowGraphics sWindowFrames[] = {
     {.tiles = sTextWindowFrame10_Gfx, .pal = sTextWindowFrame10_Pal},
 };
 
+static const u16 sTextWindowDexnavFrame[] = INCBIN_U16("graphics/dexnav/dexnav_pal.gbapal");
+static const struct TextWindowGraphics sDexnavWindowFrame = {sTextWindowFrame1_Gfx, sTextWindowDexnavFrame};
+
 const struct TextWindowGraphics *GetUserWindowGraphics(u8 id)
 {
     if (id >= ARRAY_COUNT(sWindowFrames))
@@ -197,4 +200,10 @@ const u16 *GetTextWindowPalette(u8 id)
         return sTextWindowPalettes[ARRAY_COUNT(sTextWindowPalettes) - 1];
     else
         return sTextWindowPalettes[id];
+}
+
+void LoadDexNavWindowGfx(u8 windowId, u16 destOffset, u8 palOffset)
+{
+    LoadBgTiles(GetWindowAttribute(windowId, WINDOW_BG), sDexnavWindowFrame.tiles, 0x120, destOffset);
+    LoadPalette(sDexnavWindowFrame.pal, palOffset, 32);
 }

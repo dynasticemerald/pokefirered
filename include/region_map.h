@@ -4,6 +4,9 @@
 #include "global.h"
 #include "bg.h"
 
+// Exported type declarations
+#define MAP_NAME_LENGTH 16
+
 enum {
     REGIONMAP_TYPE_NORMAL,
     REGIONMAP_TYPE_WALL,

@@ -1683,7 +1683,7 @@ static void MoveSelectionDisplayMoveType(u32 battler)
         type = TYPE_NORMAL;
         end = StringCopy(txtPtr, gTypesInfo[type].name);
     }
-    else if (moveInfo->moves[gMoveSelectionCursor[battler]] == MOVE_TERA_STARSTORM)
+    else if (moveInfo->moves[gMoveSelectionCursor[battler]] == MOVE_STELLAR_STARSTORM)
     {
         if (gBattleMons[battler].species == SPECIES_TERAPAGOS_STELLAR
         || (IsGimmickSelected(battler, GIMMICK_TERA) && gBattleMons[battler].species == SPECIES_TERAPAGOS_TERASTAL))
