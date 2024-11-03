@@ -31,7 +31,7 @@ MtMoon_1F_EventScript_ItemPotion::
 	end
 
 MtMoon_1F_EventScript_ItemRareCandy::
-	finditem ITEM_RARE_CANDY
+	finditem ITEM_HEART_SCALE
 	end
 
 MtMoon_1F_EventScript_ItemEscapeRope::

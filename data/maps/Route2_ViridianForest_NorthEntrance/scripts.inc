@@ -11,5 +11,4 @@ Route2_ViridianForest_NorthEntrance_EventScript_OldMan::
 
 Route2_ViridianForest_NorthEntrance_EventScript_CooltrainerF::
 	msgbox Route2_ViridianForest_NorthEntrance_Text_CanCancelEvolution, MSGBOX_NPC
-	setflag FLAG_SYS_DEXNAV_GET
 	end

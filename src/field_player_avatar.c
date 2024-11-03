@@ -1677,9 +1677,9 @@ static bool32 (*const sFishingStateFuncs[])(struct Task *) =
     [FISHING_CHECK_MORE_DOTS]       = Fishing_CheckMoreDots,
     [FISHING_MON_ON_HOOK]           = Fishing_MonOnHook,
     [FISHING_START_ENCOUNTER]       = Fishing_StartEncounter,
-    [FISHING_NOT_EVEN_NIBBLE]       = Fishing_NotEvenNibble,
-    [FISHING_GOT_AWAY]              = Fishing_GotAway,
-    [FISHING_NO_MON]                = Fishing_NoMon,
+    //[FISHING_NOT_EVEN_NIBBLE]       = Fishing_NotEvenNibble,
+    //[FISHING_GOT_AWAY]              = Fishing_GotAway,
+    //[FISHING_NO_MON]                = Fishing_NoMon,
     [FISHING_PUT_ROD_AWAY]          = Fishing_PutRodAway,
     [FISHING_END_NO_MON]            = Fishing_EndNoMon,
 };
@@ -1712,7 +1712,7 @@ static bool32 Fishing_Init(struct Task *task)
 static bool32 Fishing_GetRodOut(struct Task *task)
 {
     struct ObjectEvent *playerObjEvent;
-    const s16 minRounds1[] = {
+    /*const s16 minRounds1[] = {
         [OLD_ROD]   = 1,
         [GOOD_ROD]  = 1,
         [SUPER_ROD] = 1
@@ -1721,10 +1721,10 @@ static bool32 Fishing_GetRodOut(struct Task *task)
         [OLD_ROD]   = 1,
         [GOOD_ROD]  = 3,
         [SUPER_ROD] = 6
-    };
+    };*/
 
     task->tRoundsPlayed = 0;
-    task->tMinRoundsRequired = minRounds1[task->tFishingRod] + (Random() % minRounds2[task->tFishingRod]);
+    task->tMinRoundsRequired = 1 + (Random() % 6);
     task->tPlayerGfxId = gObjectEvents[gPlayerAvatar.objectEventId].graphicsId;
     playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
     ObjectEventClearHeldMovementIfActive(playerObjEvent);
@@ -1864,15 +1864,15 @@ static bool32 Fishing_ChangeMinigame(struct Task *task)
 // We have a bite. Now, wait for the player to press A, or the timer to expire.
 static bool32 Fishing_WaitForA(struct Task *task)
 {
-    const s16 reelTimeouts[3] = {
+    /*const s16 reelTimeouts[3] = {
         [OLD_ROD]   = 36,
         [GOOD_ROD]  = 33,
         [SUPER_ROD] = 30
-    };
+    };*/
 
     AlignFishingAnimationFrames(&gSprites[gPlayerAvatar.spriteId]);
     task->tFrameCounter++;
-    if (task->tFrameCounter >= reelTimeouts[task->tFishingRod])
+    if (task->tFrameCounter >= 30)
         task->tStep = FISHING_GOT_AWAY;
     else if (JOY_NEW(A_BUTTON))
         task->tStep = FISHING_CHECK_MORE_DOTS;
@@ -1953,13 +1953,13 @@ static bool32 Fishing_StartEncounter(struct Task *task)
     {
         gPlayerAvatar.preventStep = FALSE;
         UnlockPlayerFieldControls();
-        FishingWildEncounter(task->tFishingRod);
+        FishingWildEncounter();
         DestroyTask(FindTaskIdByFunc(Task_Fishing));
     }
     return FALSE;
 }
 
-static bool32 Fishing_NotEvenNibble(struct Task *task)
+static UNUSED bool32 Fishing_NotEvenNibble(struct Task *task)
 {
     gChainFishingDexNavStreak = 0;
     AlignFishingAnimationFrames(&gSprites[gPlayerAvatar.spriteId]);
@@ -1970,7 +1970,7 @@ static bool32 Fishing_NotEvenNibble(struct Task *task)
     return TRUE;
 }
 
-static bool32 Fishing_GotAway(struct Task *task)
+static UNUSED bool32 Fishing_GotAway(struct Task *task)
 {
     gChainFishingDexNavStreak = 0;
     AlignFishingAnimationFrames(&gSprites[gPlayerAvatar.spriteId]);
@@ -1981,7 +1981,7 @@ static bool32 Fishing_GotAway(struct Task *task)
     return TRUE;
 }
 
-static bool32 Fishing_NoMon(struct Task *task)
+static UNUSED bool32 Fishing_NoMon(struct Task *task)
 {
     AlignFishingAnimationFrames(&gSprites[gPlayerAvatar.spriteId]);
     task->tStep = FISHING_PUT_ROD_AWAY;
